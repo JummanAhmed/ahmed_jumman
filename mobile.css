@@ -1,0 +1,485 @@
+*{
+    margin: 0 0 ;
+    padding: 0 0 ;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(cyan,transparent);
+    border-radius: 2px;
+}
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: 9990;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation-name: anim-wrap;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.wrap{
+    height: 100px;
+    width: 500px;
+    overflow: hidden; 
+   
+
+ 
+
+}
+@keyframes anim-wrap{
+   to{
+       transform: translateY(-100%);
+   }
+}
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.elem:nth-child(1){
+    animation-name: anim-load;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes anim-load{
+    to{
+        margin-top: -115px;
+    }
+}
+.nav-logo img{
+    width: 150px;
+    position: relative;
+
+}
+
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+.nav-menu li{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    z-index: 99;
+    position: absolute;
+    top: 220px;
+    text-align: center;
+}
+.nav-menu li a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    border-bottom: 0px solid cyan;
+
+
+
+}
+
+.nav-menu li ul{
+    margin: 0 40px;
+    position: relative;
+    bottom: 100px;
+    margin: 40px 0;
+    font-size: 130%;
+    
+}
+
+.nav-socal{
+    
+    justify-content: flex-end;
+    position: relative;
+    bottom: 85px;
+   
+}
+.nav-socal img{
+    margin: 0 3px;
+    cursor: pointer;
+}
+#fb{
+    height: 40px;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+#insta{
+    height: 22px;
+    position: relative;
+    transition: 0.2s;
+    top: 11px;
+
+}
+
+#twit{
+    height:  33px ;
+    position: relative;
+    top: 5px;
+    
+}
+
+.nav-toogle img{
+    width: 25px;
+    position: absolute;
+    top: 30px;
+    
+}
+.nav-toogle{
+    display: flex;
+    justify-content:flex-end;
+    margin-left: 37px;
+    cursor: pointer;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    color: white;
+    position: absolute;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    font-size: 70%;
+    top: 260px;
+}
+.skill-wrap{
+   
+    height: 100px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    font-size: 80%;
+    
+    
+    
+}
+.skill-elem{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -23px;
+  
+
+}
+.skill-elem:nth-child(1){
+    animation-name: skill-anim;
+    animation-duration: 1.5s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.skill-elem:nth-child(2){
+    animation-name: skill-anim;
+    animation-duration: 1.5s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.skill-elem:nth-child(3){
+    animation-name: skill-anim;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.skill-elem:nth-child(4){
+    animation-name: skill-anim;
+    animation-duration: 1.5s;
+    animation-delay: 10s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+@keyframes skill-anim{
+    to{
+        margin-top: -100px;
+    }
+}
+
+
+.see-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+.see-btn a button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Play', sans-serif;
+    padding: 7px;
+    cursor: pointer;
+    
+    
+}
+.see-btn a button:hover{
+    background-color: white;
+    padding: 8px;
+    color: black;
+}
+#hide{
+    display: none;
+}
+.ab-con{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card{
+
+    width: 330px;
+    height: 400px;
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background:  linear-gradient(to left,rgba(255,255, 255,0.1),transparent,rgba(255,255, 255,0.1));
+    border-top:  1px solid rgba(255,255, 255,0.5);
+    border-left:  1px solid rgba(255,255, 255,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+
+}
+.card h1{
+    position: relative;
+    left: 120px;
+    color: white;
+    top: 35px;
+    font-family: 'Play', sans-serif;
+    
+    
+}
+.card p{
+    position: relative;
+    text-align: justify;
+    top: 160px;
+    color: white;
+  
+    font-family: 'Play', sans-serif;
+    font-size: 110%;
+    left: -40px;
+
+}
+.skill-box{
+    color: white;
+    font-family: 'Play', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+}
+
+.skill-con{
+    background:  linear-gradient(rgba(255,255, 255,0.1),transparent,rgba(255,255, 255,0.1));
+    border-top:  1px solid rgba(255,255, 255,0.5);
+    border-left:  1px solid rgba(255,255, 255,0.5);
+    margin: 20px;
+    width: 80%;
+    margin-left: 10px;
+    padding:5px 10px;
+    box-sizing: border-box;
+    
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    position: relative;
+    bottom: 60px;
+    
+    
+}
+
+
+.skill-loader-1{
+    background:linear-gradient(cyan,transparent,cyan);
+    border-radius: 4px;
+    width: 1px;
+    height: 10px;
+    animation-name: prog-anim;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+   
+}
+
+.skill-loader-2{
+    background:linear-gradient(cyan,transparent,cyan);
+    border-radius: 4px;
+    width: 1px;
+    height: 10px;
+    animation-name: prog-anim-2;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+   
+}
+
+.skill-loader-3{
+    background:linear-gradient(cyan,transparent,cyan);
+    border-radius: 4px;
+    width: 1px;
+    height: 10px;
+    animation-name: prog-anim-3;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+   
+}
+
+.skill-loader-4{
+    background:linear-gradient(cyan,transparent,cyan);
+    border-radius: 4px;
+    width: 1px;
+    height: 10px;
+    animation-name: prog-anim-4;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+   
+}
+@keyframes prog-anim{
+    to{
+        width: 80%;
+    }
+}
+@keyframes prog-anim-2{
+    to{
+        width: 63%
+    }
+}
+@keyframes prog-anim-3{
+    to{
+        width: 68%;
+    }
+}
+@keyframes prog-anim-4{
+    to{
+        width: 54%;
+    }
+}
+#skill-para{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    position: absolute;
+    font-size: 140%;
+    font-family: 'Play', sans-serif;
+    background:  linear-gradient(rgba(255,255, 255,0.1),transparent,rgba(255,255, 255,0.1));
+    border-top:  1px solid rgba(255,255, 255,0.5);
+    border-left:  1px solid rgba(255,255, 255,0.5);
+    padding: 30px;
+    border-radius: 5px;
+    
+}
+
+.form-s{
+    color:white;
+    
+     font-family: 'Play', sans-serif;
+     position: relative;
+     bottom: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.input-c{
+    margin-top: 40px;
+    width: 300px;
+    background:  linear-gradient(rgba(255,255, 255,0.1),transparent,rgba(255,255, 255,0.1));
+    border-top:  1px solid rgba(255,255, 255,0.5);
+    border-left:  1px solid rgba(255,255, 255,0.5);
+    border-radius: 5px;
+    height: 50px;
+    color:white;
+    font-size: 120%;
+    font-family: 'Play', sans-serif;
+    border-right: none;
+    border-bottom: none;
+   
+    
+}
+
+.msg-c{
+    background:  linear-gradient(rgba(255,255, 255,0.1),transparent,rgba(255,255, 255,0.1));
+    border-top:  1px solid rgba(255,255, 255,0.5);
+    border-left:  1px solid rgba(255,255, 255,0.5);
+    min-width: 300px;
+    height: 100px;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 5px;
+    
+    margin-top: 40px ;
+    font-size: 120%;
+    color: white;
+
+
+    }
+
+
+.form-btn input{
+    background:linear-gradient(darkcyan,transparent,darkcyan);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Play', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 110%;
+   
+    margin-top: 30px;
+}
+.reset{
+    background:linear-gradient(darkcyan,transparent,darkcyan);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Play', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 110%;
+    margin-left: 202px;
+    position: absolute;
+    bottom: 0px;
+}
